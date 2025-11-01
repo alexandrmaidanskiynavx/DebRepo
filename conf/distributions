@@ -6,4 +6,4 @@ Version: 12
 Architectures: amd64
 Components: main
 Description: Repository for Debian 12 (bookworm)
-SignWith: 968CE05A94A56100
+SignWith: 0CEF3E0BF40D4A44
