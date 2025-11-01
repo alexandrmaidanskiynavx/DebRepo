@@ -1,0 +1,21 @@
+Origin: AlexandrRepo
+Label: AlexandrRepo
+Suite: stable
+Codename: bookworm
+Version: 12
+Date: Sat, 01 Nov 2025 13:01:58 UTC
+Architectures: amd64
+Components: main
+Description: Repository for Debian 12 (bookworm)
+MD5Sum:
+ 5041d06e4ac062ff0a96fbe16650352f 15828 main/binary-amd64/Packages
+ 87e03982222a104d6f8cd3d80c225be6 5919 main/binary-amd64/Packages.gz
+ 4da481e9a84f1fa8446bb249480a1144 154 main/binary-amd64/Release
+SHA1:
+ 989f1fc1e82c1106f6734c442945a6a1e6ab6e41 15828 main/binary-amd64/Packages
+ 68e89fa5909097327e90531d5a70e2117f40d7f0 5919 main/binary-amd64/Packages.gz
+ 56af11f933ace154afa17b9704b04cb243840853 154 main/binary-amd64/Release
+SHA256:
+ bacdce7c7f63ef8fdb586c2544147705129969e969d6032a5002d4a9c54e8f75 15828 main/binary-amd64/Packages
+ a8b1b3070ddb4e7489ccc9186595ee8ede40d79a9e0c2d50e741ec83e40c7b46 5919 main/binary-amd64/Packages.gz
+ f57549b37bf0a8392b88d81e09b07eccd1f37fc6cf5211f04f9ced8bb9df4655 154 main/binary-amd64/Release

@@ -1,0 +1,7 @@
+Archive: stable
+Version: 12
+Component: main
+Origin: AlexandrRepo
+Label: AlexandrRepo
+Architecture: amd64
+Description: Repository for Debian 12 (bookworm)

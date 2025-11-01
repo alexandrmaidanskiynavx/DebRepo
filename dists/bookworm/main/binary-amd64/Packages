@@ -1,0 +1,337 @@
+Package: gcc-12-base
+Source: gcc-12
+Version: 12.2.0-14+deb12u1
+Architecture: amd64
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 100
+Breaks: gnat (<< 7)
+Multi-Arch: same
+Homepage: http://gcc.gnu.org/
+Priority: optional
+Section: libs
+Filename: pool/main/g/gcc-12/gcc-12-base_12.2.0-14+deb12u1_amd64.deb
+Size: 37596
+SHA256: 1896a2aacf4ad681ff5eacc24a5b0ca4d5d9c9b9c9e4b6de5197bc1e116ea619
+SHA1: 715f9e66f5f45930246f5881c6dfe75ab8c6f32c
+MD5sum: 8e7e741807b1e1939df8f58323affdcb
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+
+Package: libacl1
+Source: acl
+Version: 2.3.1-3
+Architecture: amd64
+Maintainer: Guillem Jover <guillem@debian.org>
+Installed-Size: 73
+Depends: libc6 (>= 2.33)
+Multi-Arch: same
+Homepage: https://savannah.nongnu.org/projects/acl/
+Priority: optional
+Section: libs
+Filename: pool/main/a/acl/libacl1_2.3.1-3_amd64.deb
+Size: 31488
+SHA256: 8be9df5795114bfe90e2be3d208ef47a5edd3fc7b3e20d387a597486d444e5e2
+SHA1: aacd7b4add807837f5e387e7fe3bfa67ff629a19
+MD5sum: 8423d92245333668fed0ab9edaf7dd14
+Description: access control list - shared library
+ This package contains the shared library containing the POSIX 1003.1e
+ draft standard 17 functions for manipulating access control lists.
+
+Package: libc6
+Source: glibc
+Version: 2.36-9+deb12u13
+Architecture: amd64
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 13000
+Depends: libgcc-s1
+Recommends: libidn2-0 (>= 2.0.5~)
+Suggests: glibc-doc, debconf | debconf-2.0, libc-l10n, locales, libnss-nis, libnss-nisplus
+Breaks: aide (<< 0.17.3-4+b3), busybox (<< 1.30.1-6), chrony (<< 4.2-3~), fakechroot (<< 2.19-3.5), firefox (<< 91~), firefox-esr (<< 91~), gnumach-image-1.8-486 (<< 2:1.8+git20210923~), gnumach-image-1.8-486-dbg (<< 2:1.8+git20210923~), gnumach-image-1.8-xen-486 (<< 2:1.8+git20210923~), gnumach-image-1.8-xen-486-dbg (<< 2:1.8+git20210923~), hurd (<< 1:0.9.git20220301-2), ioquake3 (<< 1.36+u20200211.f2c61c1~dfsg-2~), iraf-fitsutil (<< 2018.07.06-4), libgegl-0.4-0 (<< 0.4.18), libtirpc1 (<< 0.2.3), locales (<< 2.36), locales-all (<< 2.36), macs (<< 2.2.7.1-3~), nocache (<< 1.1-1~), nscd (<< 2.36), openarena (<< 0.8.8+dfsg-4~), openssh-server (<< 1:8.1p1-5), python3-iptables (<< 1.0.0-2), r-cran-later (<< 0.7.5+dfsg-2), tinydns (<< 1:1.05-14), valgrind (<< 1:3.19.0-1~), wcc (<< 0.0.2+dfsg-3)
+Replaces: libc6-amd64
+Multi-Arch: same
+Homepage: https://www.gnu.org/software/libc/libc.html
+Priority: optional
+Section: libs
+Filename: pool/main/g/glibc/libc6_2.36-9+deb12u13_amd64.deb
+Size: 2757632
+SHA256: 3d8072c73b017e907bbf44b7db870687888a991961d74f1ecbba6b9458f32a2c
+SHA1: ca8cb1523b871f5a9f025bc0b39f54870e8b8c8d
+MD5sum: fc709ca0fa8b78562e2d071f2860d333
+Description: GNU C Library: Shared libraries
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+
+Package: libgcc-s1
+Source: gcc-12
+Version: 12.2.0-14+deb12u1
+Architecture: amd64
+Protected: yes
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 140
+Depends: gcc-12-base (= 12.2.0-14+deb12u1), libc6 (>= 2.35)
+Replaces: libgcc1 (<< 1:10)
+Provides: libgcc1 (= 1:12.2.0-14+deb12u1)
+Multi-Arch: same
+Homepage: http://gcc.gnu.org/
+Priority: optional
+Section: libs
+Filename: pool/main/g/gcc-12/libgcc-s1_12.2.0-14+deb12u1_amd64.deb
+Size: 49856
+SHA256: 3016e62cb4b7cd8038822870601f5ed131befe942774d0f745622cc77d8a88f7
+SHA1: c72798568b9086ecacf3d46e420c6d90b78ce50d
+MD5sum: 9db51e73a4a0547f1e67400bc2c11a86
+Description: GCC support library
+ Shared version of the support library, a library of internal subroutines
+ that GCC uses to overcome shortcomings of particular machines, or
+ special needs for some languages.
+Important: yes
+
+Package: libpcre2-8-0
+Source: pcre2
+Version: 10.42-1
+Architecture: amd64
+Maintainer: Matthew Vernon <matthew@debian.org>
+Installed-Size: 685
+Depends: libc6 (>= 2.34)
+Multi-Arch: same
+Homepage: https://pcre.org/
+Priority: optional
+Section: libs
+Filename: pool/main/p/pcre2/libpcre2-8-0_10.42-1_amd64.deb
+Size: 260776
+SHA256: 030db54f4d76cdfe2bf0e8eb5f9efea0233ab3c7aa942d672c7b63b52dbaf935
+SHA1: 9708342efef410d4ac274f0f4b4aba280d72a912
+MD5sum: 2164cb282e379d053789306c07ce9828
+Description: New Perl Compatible Regular Expression Library- 8 bit runtime files
+ This is PCRE2, the new implementation of PCRE, a library of functions
+ to support regular expressions whose syntax and semantics are as
+ close as possible to those of the Perl 5 language. New projects
+ should use this library in preference to the older library,
+ confusingly called pcre3 in Debian.
+ .
+ This package contains the 8 bit runtime library, which operates on
+ ASCII and UTF-8 input.
+
+Package: libselinux1
+Source: libselinux (3.4-1)
+Version: 3.4-1+b6
+Architecture: amd64
+Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+Installed-Size: 199
+Depends: libc6 (>= 2.34), libpcre2-8-0 (>= 10.22)
+Multi-Arch: same
+Homepage: https://selinuxproject.org
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libselinux/libselinux1_3.4-1+b6_amd64.deb
+Size: 73720
+SHA256: 2b07f5287b9105f40158b56e4d70cc1652dac56a408f3507b4ab3d061eed425f
+SHA1: 3622f92473ca1113ee5c68ce8f1b47f6cdafe4df
+MD5sum: 78f9188026cbf5e150859a45ec6a608f
+Description: SELinux runtime shared libraries
+ This package provides the shared libraries for Security-enhanced
+ Linux that provides interfaces (e.g. library functions for the
+ SELinux kernel APIs like getcon(), other support functions like
+ getseuserbyname()) to SELinux-aware applications. Security-enhanced
+ Linux is a patch of the Linux kernel and a number of utilities with
+ enhanced security functionality designed to add mandatory access
+ controls to Linux.  The Security-enhanced Linux kernel contains new
+ architectural components originally developed to improve the security
+ of the Flask operating system. These architectural components provide
+ general support for the enforcement of many kinds of mandatory access
+ control policies, including those based on the concepts of Type
+ Enforcement, Role-based Access Control, and Multi-level Security.
+ .
+ libselinux1 provides an API for SELinux applications to get and set
+ process and file security contexts and to obtain security policy
+ decisions.  Required for any applications that use the SELinux
+ API. libselinux may use the shared libsepol to manipulate the binary
+ policy if necessary (e.g. to downgrade the policy format to an older
+ version supported by the kernel) when loading policy.
+
+Package: libsensors-config
+Source: lm-sensors
+Version: 1:3.6.0-7.1
+Architecture: all
+Maintainer: Aurelien Jarno <aurel32@debian.org>
+Installed-Size: 33
+Suggests: lm-sensors
+Breaks: libsensors4
+Replaces: libsensors4
+Multi-Arch: foreign
+Homepage: https://hwmon.wiki.kernel.org/lm_sensors
+Priority: optional
+Section: utils
+Filename: pool/main/l/lm-sensors/libsensors-config_3.6.0-7.1_all.deb
+Size: 14252
+SHA256: 7f3c9fbd822858a9e30335e4a7f66c9468962eb26cd375b93bc8b789660bf02f
+SHA1: 151a1825e3a2656f733e09d28fb72f45c0f25523
+MD5sum: 8df1391d9a5a84ff2c8ebf162165d174
+Description: lm-sensors configuration files
+ Lm-sensors is a hardware health monitoring package for Linux. It allows you
+ to access information from temperature, voltage, and fan speed sensors. It
+ works with most newer systems.
+ .
+ This library is only functional with a Linux kernel, it is provided on
+ non-Linux systems for portability reasons only.
+ .
+ This package contains the configuration files.
+
+Package: libsensors5
+Source: lm-sensors
+Version: 1:3.6.0-7.1
+Architecture: amd64
+Maintainer: Aurelien Jarno <aurel32@debian.org>
+Installed-Size: 87
+Depends: libsensors-config, libc6 (>= 2.33)
+Suggests: lm-sensors
+Multi-Arch: same
+Homepage: https://hwmon.wiki.kernel.org/lm_sensors
+Priority: optional
+Section: libs
+Filename: pool/main/l/lm-sensors/libsensors5_3.6.0-7.1_amd64.deb
+Size: 34160
+SHA256: b7eb91dce728fbb9203aec8b22637303b29821c3384e5f78a8ff348b4e44efe3
+SHA1: 054b7946abf7f77f275e6c0f590605a89c76f913
+MD5sum: 140ef89e3e218c8e0b47f3149061446d
+Description: library to read temperature/voltage/fan sensors
+ Lm-sensors is a hardware health monitoring package for Linux. It allows you
+ to access information from temperature, voltage, and fan speed sensors. It
+ works with most newer systems.
+ .
+ This library is only functional with a Linux kernel, it is provided on
+ non-Linux systems for portability reasons only.
+ .
+ This package contains a shared library for querying lm-sensors.
+
+Package: lm-sensors
+Version: 1:3.6.0-7.1
+Architecture: amd64
+Maintainer: Aurelien Jarno <aurel32@debian.org>
+Installed-Size: 386
+Depends: sed (>= 4.0.5-1), lsb-base (>= 3.2-13), libc6 (>= 2.34), libsensors5 (>= 1:3.5.0), perl:any
+Suggests: fancontrol, read-edid, i2c-tools
+Homepage: https://hwmon.wiki.kernel.org/lm_sensors
+Priority: optional
+Section: utils
+Filename: pool/main/l/lm-sensors/lm-sensors_3.6.0-7.1_amd64.deb
+Size: 97200
+SHA256: 262d192fd4671d22c7864855daa80bb3eb7ad75c62dcec68f2ee4f505c27d4d0
+SHA1: 0b93d3839fd15415f72224c0873f6f9ef31b5fa4
+MD5sum: 130b875ca6e5e5449a1d4d4f845d8567
+Description: utilities to read temperature/voltage/fan sensors
+ Lm-sensors is a hardware health monitoring package for Linux. It allows you
+ to access information from temperature, voltage, and fan speed sensors. It
+ works with most newer systems.
+ .
+ This package contains programs to help you set up and read data from
+ lm-sensors.
+
+Package: lsb-base
+Source: lsb
+Version: 11.6
+Architecture: all
+Maintainer: Debian sysvinit maintainers <debian-init-diversity@chiark.greenend.org.uk>
+Installed-Size: 12
+Depends: sysvinit-utils (>= 3.05-4~)
+Multi-Arch: foreign
+Homepage: https://wiki.linuxfoundation.org/lsb/start
+Priority: optional
+Section: oldlibs
+Filename: pool/main/l/lsb/lsb-base_11.6_all.deb
+Size: 4584
+SHA256: f8bedd167280e76636df3a1bc023cd2906d458916c1af4c1d7912c5b971fc642
+SHA1: a35020cdf6d77bfe6ba53bca12f6f78ddb3ddf5b
+MD5sum: e11ef978bfbcf7e07758cc35adf4d4a0
+Description: transitional package for Linux Standard Base init script functionality
+ This is an empty package; it's needed only because of Provides: not being
+ supported in debootstrap.  It can be safely removed.
+
+Package: perl
+Version: 5.36.0-7+deb12u3
+Architecture: amd64
+Maintainer: Niko Tyni <ntyni@debian.org>
+Installed-Size: 670
+Pre-Depends: dpkg (>= 1.17.17)
+Depends: perl-base (= 5.36.0-7+deb12u3), perl-modules-5.36 (>= 5.36.0-7+deb12u3), libperl5.36 (= 5.36.0-7+deb12u3)
+Recommends: netbase
+Suggests: perl-doc, libterm-readline-gnu-perl | libterm-readline-perl-perl, make, libtap-harness-archive-perl
+Conflicts: libjson-pp-perl (<< 2.27200-2)
+Breaks: apt-show-versions (<< 0.22.10), libdist-inkt-perl (<< 0.024-5), libmarc-charset-perl (<< 1.35-3), libperl-dev (<< 5.24.0~), perl-doc (<< 5.36.0-1), perl-modules-5.22, perl-modules-5.24, perl-modules-5.26 (<< 5.26.2-5)
+Replaces: perl-base (<< 5.36.0-2), perl-modules (<< 5.22.0~)
+Provides: libansicolor-perl (= 5.01), libarchive-tar-perl (= 2.40), libattribute-handlers-perl (= 1.02), libautodie-perl (= 2.34), libcompress-raw-bzip2-perl (= 2.103), libcompress-raw-zlib-perl (= 2.105), libcompress-zlib-perl (= 2.106), libcpan-meta-perl (= 2.150010), libcpan-meta-requirements-perl (= 2.140), libcpan-meta-yaml-perl (= 0.018), libdigest-md5-perl (= 2.58), libdigest-perl (= 1.20), libdigest-sha-perl (= 6.02), libencode-perl (= 3.17), libexperimental-perl (= 0.028), libextutils-cbuilder-perl (= 0.280236), libextutils-command-perl (= 7.64), libextutils-install-perl (= 2.20), libextutils-parsexs-perl (= 3.450000), libfile-spec-perl (= 3.8400), libhttp-tiny-perl (= 0.080), libi18n-langtags-perl (= 0.45), libio-compress-base-perl (= 2.106), libio-compress-bzip2-perl (= 2.106), libio-compress-perl (= 2.106), libio-compress-zlib-perl (= 2.106), libio-zlib-perl (= 1.11), libjson-pp-perl (= 4.07000), liblocale-maketext-perl (= 1.31), liblocale-maketext-simple-perl (= 0.21.01), libmath-bigint-perl (= 1.999830), libmath-complex-perl (= 1.5902), libmime-base64-perl (= 3.16), libmodule-corelist-perl (= 5.20220520), libmodule-load-conditional-perl (= 0.74), libmodule-load-perl (= 0.36), libmodule-metadata-perl (= 1.000037), libnet-perl (= 1:3.14), libnet-ping-perl (= 2.74), libparams-check-perl (= 0.38), libparent-perl (= 0.238), libparse-cpan-meta-perl (= 2.150010), libperl-ostype-perl (= 1.010), libpod-escapes-perl (= 1.07), libpod-simple-perl (= 3.43), libstorable-perl (= 3.26), libsys-syslog-perl (= 0.36), libtest-harness-perl (= 3.44), libtest-simple-perl (= 1.302190), libtest-tester-perl (= 1.302190), libtest-use-ok-perl (= 1.302190), libtext-balanced-perl (= 2.04), libthread-queue-perl (= 3.14), libthreads-perl (= 2.27), libthreads-shared-perl (= 1.64), libtime-hires-perl (= 1.9770), libtime-local-perl (= 1.3000), libtime-piece-perl (= 1.3401), libunicode-collate-perl (= 1.31), libversion-perl (= 1:0.9929), libversion-requirements-perl, podlators-perl (= 4.14)
+Multi-Arch: allowed
+Homepage: http://dev.perl.org/perl5/
+Priority: standard
+Section: perl
+Filename: pool/main/p/perl/perl_5.36.0-7+deb12u3_amd64.deb
+Size: 238900
+SHA256: afa50ec7d9b1a407cd0187dae033644ef13578d4f3792435e0c41b962ffec0c4
+SHA1: cdca36f1c278db753815c0e73a6e062fcaa412d0
+MD5sum: ecd2edf27d8e7a67795e81e1756de5f4
+Description: Larry Wall's Practical Extraction and Report Language
+ Perl is a highly capable, feature-rich programming language with over
+ 20 years of development. Perl 5 runs on over 100 platforms from
+ portables to mainframes. Perl is suitable for both rapid prototyping
+ and large scale development projects.
+ .
+ Perl 5 supports many programming styles, including procedural,
+ functional, and object-oriented. In addition to this, it is supported
+ by an ever-growing collection of reusable modules which accelerate
+ development. Some of these modules include Web frameworks, database
+ integration, networking protocols, and encryption. Perl provides
+ interfaces to C and C++ for custom extension development.
+
+Package: sed
+Version: 4.9-1
+Architecture: amd64
+Essential: yes
+Maintainer: Clint Adams <clint@debian.org>
+Installed-Size: 987
+Pre-Depends: libacl1 (>= 2.2.23), libc6 (>= 2.34), libselinux1 (>= 3.1~)
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/sed/
+Priority: required
+Section: utils
+Filename: pool/main/s/sed/sed_4.9-1_amd64.deb
+Size: 328900
+SHA256: 177cacdfe9508448d84bf25534a87a7fcc058d8e2dcd422672851ea13f2115df
+SHA1: adebaca081efdae04d9b502217b96132d9b5ca59
+MD5sum: 51b1137d3dc311c2351d9740a410bd39
+Description: GNU stream editor for filtering/transforming text
+ sed reads the specified files or the standard input if no
+ files are specified, makes editing changes according to a
+ list of commands, and writes the results to the standard
+ output.
+
+Package: sysvinit-utils
+Source: sysvinit
+Version: 3.06-4
+Architecture: amd64
+Essential: yes
+Maintainer: Debian sysvinit maintainers <debian-init-diversity@chiark.greenend.org.uk>
+Installed-Size: 100
+Depends: libc6 (>= 2.34)
+Conflicts: lsb-base (<< 11.3~)
+Replaces: lsb-base
+Provides: lsb-base (= 11.1.0)
+Multi-Arch: foreign
+Homepage: https://github.com/slicer69/sysvinit
+Priority: required
+Section: admin
+Filename: pool/main/s/sysvinit/sysvinit-utils_3.06-4_amd64.deb
+Size: 30996
+SHA256: 11790842108768ec52432ea22e7b4f057232813b7c27ef6dfe1aba776a5cb90e
+SHA1: 4ac0e3974981a21847920a0ad2d3750a3b472010
+MD5sum: 931432082ae59bf88b9c52100e82d003
+Description: System-V-like utilities
+ This package contains the important System-V-like utilities.
+ .
+ Specifically, this package includes:
+ init-d-script, fstab-decode, killall5, pidof
+ .
+ It also contains the library scripts sourced by init-d-script and other
+ initscripts that were formally in lsb-base.
+

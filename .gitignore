@@ -1,0 +1,7 @@
+db/
+private/
+tmp/
+incoming/
+processed/
+keys/repo-secret.asc
+.gpg-agent/
